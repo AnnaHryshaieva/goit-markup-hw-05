@@ -58,7 +58,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button primary">Замовити послугу</button>
+          <button type="button" class="button primary" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="section">
@@ -115,31 +115,40 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="work-list">
             <li class="work-list-item">
-              <img
-                class="work-list-img"
-                src="./images/img-1.jpg"
-                alt="Процес написання коду. На фото стіл, комп'ютер, блок-схема на папері, блокнот, ручка, окуляри."
-                width="370"
-                height="294"
-              />
+              <div class="work-list-descr">
+                <img
+                  class="work-list-img"
+                  src="./images/img-1.jpg"
+                  alt="Процес написання коду. На фото стіл, комп'ютер, блок-схема на папері, блокнот, ручка, окуляри."
+                  width="370"
+                  height="294"
+                />
+                <p class="work-descr">Десктопні додатки</p>
+              </div>
             </li>
             <li class="work-list-item">
-              <img
-                class="work-list-img"
-                src="./images/img-2.jpg"
-                alt="Ноутбук, з макетом телефону в ньому, зображена рука, яка тримає телефон."
-                width="370"
-                height="294"
-              />
+              <div class="work-list-descr">
+                <img
+                  class="work-list-img"
+                  src="./images/img-2.jpg"
+                  alt="Ноутбук, з макетом телефону в ньому, зображена рука, яка тримає телефон."
+                  width="370"
+                  height="294"
+                />
+                <p class="work-descr">Мобільні додатки</p>
+              </div>
             </li>
             <li class="work-list-item">
-              <img
-                class="work-list-img"
-                src="./images/img-3.jpg"
-                alt="Планшет з зображення соти з різним набором кольорів"
-                width="370"
-                height="294"
-              />
+              <div class="work-list-descr">
+                <img
+                  class="work-list-img"
+                  src="./images/img-3.jpg"
+                  alt="Планшет з зображення соти з різним набором кольорів"
+                  width="370"
+                  height="294"
+                />
+                <p class="work-descr">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -435,5 +444,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="btn-close" data-modal-close>
+          <svg class="modal-close-icon">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
